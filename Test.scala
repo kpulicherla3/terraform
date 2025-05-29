@@ -1,1 +1,0 @@
-val all_encounter_identifiers_json = Option(encounter.getIdentifier).map(_.asScala).getOrElse(Seq.empty).map(id => s"""{"system":"${id.getSystem}","value":"${id.getValue}"}""").mkString("[", ",", "]")
